@@ -1,0 +1,183 @@
+@import url('clases.css');
+@import url('responsive.css');
+
+body {
+  margin: 0;
+}
+header {
+  margin: 0;
+  background-image: linear-gradient(rgba(9, 137, 241, 0.329), rgba(255, 251, 251, 0.329)), url(imagenes/6664403f6bc7d.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.caratula {
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+  font-size: 6rem;
+  animation: entrarDesdeDerecha 1s ease-out forwards;
+  margin: auto;
+  padding-top: 8rem;
+}
+
+.subtitle {
+  font-size: 3rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem black;
+  animation-name: entrarIzquierda, retirada, retorno;
+  animation-duration: 8s, 2s, 2s;
+  animation-delay: 0, 2s, 2s;
+  animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  animation-fill-mode: forwards, forwards, forwards;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.651);
+  border-radius: 0 .5rem 0 .5rem;
+  padding: 0 1rem .5rem 1rem ;
+}
+@keyframes entrarDesdeDerecha {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes entrarIzquierda {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes retirada {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+@keyframes retorno {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+ul a {
+  color: #f8f5f5;
+  list-style: none;
+  text-decoration: none;
+}
+
+.list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(24, 23, 23, 0.055), rgba(0, 132, 255, 0.432));
+  background-color: black;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem black;
+  font-size: 1.3rem;
+  top: 33rem;
+  width: 14.25rem;
+}
+
+ul a:hover {
+  box-shadow: 0.2rem 0.2rem 0.2rem white;
+  transform: scale(1.1);
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+.novedades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  width: 80vw;
+  margin: auto;
+  margin-top: 1rem;
+  margin-left: 15rem;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 80vw;
+}
+
+.diario {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+span {
+  color: white;
+  text-shadow: 0.2rem 0.3rem 0.5rem rgba(0, 0, 0, 0.87);
+}
+
+.nota2, .nota3, .nota4, .nota1{
+  background-color: rgba(5, 5, 5, 0.911);
+  box-shadow: 0.3rem 0.3rem 0.3rem black;
+  padding: 2rem;
+}
+
+.nota2:hover, .nota3:hover, .nota4:hover, .nota1:hover {
+  background-color: rgb(3, 74, 102);
+  transform: rotate(3deg);
+}
+
+.logo {
+  margin-bottom: 1.5rem;
+}
+.nota3 a, .nota2 a, .nota4 a, .nota1 a {
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+}
+
+#abc-logo {
+  width: 100%;
+}
+
+.tn-logo {
+  width: 90%;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 5rem;
+  text-align: center;
+}
+.logo_infobae {
+  width: 100%;
+}
