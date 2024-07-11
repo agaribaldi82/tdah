@@ -31,7 +31,7 @@ function change_subtitle() {
             break;
           }
 
-          subtitle.innerHTML = "Perdón...no encuentro el telefono...ya vuelvo...";
+          subtitle.innerHTML = "Perdón...no encuentro el teléfono...ya vuelvo...";
           _context.next = 7;
           return regeneratorRuntime.awrap(sleep(4000));
 

@@ -11,7 +11,10 @@ header {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 30rem;
+  height: 38rem;
+}
+.header-adultos {
+  background-image: linear-gradient(rgba(9, 137, 241, 0.329), rgba(255, 251, 251, 0.329)), url(imagenes/adultos.jpg);
 }
 a {
   text-decoration: none;
@@ -96,18 +99,32 @@ ul a {
   text-decoration: none;
 }
 
+nav {
+  width: 14.25rem;
+  margin-top: 2.7rem;
+}
+
+nav li {
+  list-style: none;
+}
+
 .list {
-  position: absolute;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgba(24, 23, 23, 0.055), rgba(0, 132, 255, 0.432));
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.411);
   padding: 1.5rem;
   gap: 1.5rem;
   text-shadow: 0.3rem 0.3rem 0.3rem black;
   font-size: 1.3rem;
   top: 33rem;
   width: 14.25rem;
+  border-radius: 0 1.5rem 0 1.5rem;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
 }
 
 ul a:hover {
@@ -115,6 +132,12 @@ ul a:hover {
   transform: scale(1.1);
   text-shadow: 0.2rem 0.2rem 0.2rem black;
   background-color: rgba(0, 0, 0, 0.445);
+  border-radius: .4rem;
+  padding: .6rem;
+}
+.container .div-nav .list {
+  position: sticky;
+  top: 0;
 }
 
 .novedades {
@@ -124,7 +147,6 @@ ul a:hover {
   width: 80vw;
   margin: auto;
   margin-top: 1rem;
-  margin-left: 15rem;
   padding: 2rem;
 }
 
@@ -169,15 +191,52 @@ span {
   width: 90%;
 }
 footer {
-  position: absolute;
   width: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
+  margin-top: 15rem;
   margin-bottom: 0;
   text-align: center;
-  margin-top: 5rem;
-  text-align: center;
 }
+
 .logo_infobae {
   width: 100%;
+}
+
+.container .parrafo-adultos {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-left: 2rem;
+  margin-top: 2.6rem;
+  font-size: 1.3rem;
+}
+main .container {
+  margin-left: 0;
+}
+
+.imagen-late {
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+}
+.h2-adultos {
+  color: black;
+}
+.h1 {
+  text-decoration: underline;
+}
+.foto_paralisis {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .novedades {
+      display: flex;
+      flex-direction: column;
+  }
+  .list {
+      display: none;
+  }
 }

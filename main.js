@@ -14,7 +14,7 @@ async function change_subtitle() {
 
     await sleep(10000);
     if (subtitle) {
-        subtitle.innerHTML = "Perdón...no encuentro el telefono...ya vuelvo...";
+        subtitle.innerHTML = "Perdón...no encuentro el teléfono...ya vuelvo...";
         await sleep(4000)
         subtitle.animate([{ transform: 'translateX(0)', opacity: '1' }, { transform: 'translateX(-100%)', opacity: '0' }], animacion)
         await sleep(5000)
