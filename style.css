@@ -101,6 +101,7 @@ ul a {
 
 nav {
   width: 14.25rem;
+  height: 100%;
   margin-top: 2.7rem;
 }
 
@@ -114,17 +115,18 @@ nav li {
   background-image: linear-gradient(rgba(24, 23, 23, 0.055), rgba(0, 132, 255, 0.432));
   background-color: rgba(0, 0, 0, 0.411);
   padding: 1.5rem;
-  gap: 1.5rem;
+  gap: 1rem;
   text-shadow: 0.3rem 0.3rem 0.3rem black;
   font-size: 1.3rem;
-  top: 33rem;
   width: 14.25rem;
   border-radius: 0 1.5rem 0 1.5rem;
+  position: sticky;
+  top: .2rem;
 }
 
 .container {
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 
 ul a:hover {
@@ -134,10 +136,6 @@ ul a:hover {
   background-color: rgba(0, 0, 0, 0.445);
   border-radius: .4rem;
   padding: .6rem;
-}
-.container .div-nav .list {
-  position: sticky;
-  top: 0;
 }
 
 .novedades {
@@ -229,6 +227,23 @@ main .container {
 }
 .foto_paralisis {
   width: 50%;
+}
+#footer {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.foto-inestable {
+  width: 70%;
+}
+
+.inest-2 {
+  width: 50%;
+}
+
+.proc {
+  width: 50%;
+  float: right;
 }
 
 @media screen and (max-width: 768px) {
