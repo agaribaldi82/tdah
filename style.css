@@ -246,6 +246,10 @@ main .container {
   float: right;
 }
 
+.h2 {
+  animation: entrada-h2 3s 2s ease-in-out ;
+}
+
 @media screen and (max-width: 768px) {
   .novedades {
       display: flex;
